@@ -43,6 +43,10 @@
       
     
     
+      <link rel="stylesheet" href="../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../css/print-site-material.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -50,6 +54,27 @@
     
     
     
+  
+  <style>
+    .pdf-floating-button {
+      position: fixed;
+      top: 90px;
+      right: 24px;
+      z-index: 1000;
+      background-color: #eee;
+      color: #000;
+      padding: 6px 8px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    }
+    .pdf-floating-button:hover {
+      background-color: #ccc;
+    }
+  </style>
+
   </head>
   
   
@@ -62,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-vcf-co-engineered-systems-documentation" class="md-skip">
+        <a href="#changelog" class="md-skip">
           Skip to content
         </a>
       
@@ -437,6 +462,7 @@
   
 
 
+<h1 id="changelog">Changelog</h1>
 <h1 id="welcome-to-vcf-co-engineered-systems-documentation">Welcome to VCF Co-Engineered Systems documentation</h1>
 <p>Change logs go here</p>
 
@@ -461,23 +487,9 @@
         
       </main>
       
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
+        <div style="position: fixed; bottom: 10px; left: 20px; font-size: 28px; color: #ff9999; z-index: 1000;">
+  Internal HC BU use only
 </div>
-      
-    </div>
-  </div>
-</footer>
       
     </div>
     <div class="md-dialog" data-md-component="dialog">
@@ -487,11 +499,25 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "toc.integrate", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.sections", "navigation.footer", "toc.integrate", "content.code.copy", "search.suggest", "content.action.print"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
+  
       <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
+        <script src="../../js/print-site.js"></script>
+      
     
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const pdfBtn = document.createElement("a");
+      pdfBtn.href = "/print/";
+      pdfBtn.innerText = "PDF";
+      pdfBtn.className = "pdf-floating-button";
+      pdfBtn.title = "Print-friendly version";
+      document.body.appendChild(pdfBtn);
+    });
+  </script>
+
   </body>
 </html>

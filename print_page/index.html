@@ -16,7 +16,7 @@
     
     
       
-        <title>Index - VCF Co-Engineered Solution Documentation</title>
+        <title>Print Site - VCF Co-Engineered Solution Documentation</title>
       
     
     
@@ -43,7 +43,7 @@
     
       <link rel="stylesheet" href="../css/print-site-material.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -71,7 +71,13 @@
     }
   </style>
 
-  </head>
+  
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
   
   
     <body dir="ltr">
@@ -81,6 +87,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#index" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -114,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Print Site
             
           </span>
         </div>
@@ -347,7 +358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Changelog/" class="md-nav__link">
+      <a href="../vcf-system-specifications/Changelog/" class="md-nav__link">
         
   
   
@@ -370,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Architecture/" class="md-nav__link">
+      <a href="../vcf-system-specifications/Architecture/" class="md-nav__link">
         
   
   
@@ -393,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="racklayout/" class="md-nav__link">
+      <a href="../vcf-system-specifications/racklayout/" class="md-nav__link">
         
   
   
@@ -439,13 +450,43 @@
                   
 
 
-  
-  
 
+<div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="3">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index" heading-number="1"><p>VCF Co-Engineered Solution Documentation</p></section>
+                    <section class='print-page md-section' id='section-2' heading-number='2'>
+                        <h1>VCF Docs<a class='headerlink' href='#section-2' title='Permanent link'></a>
+                        </h1>
+                    
+                    <section class='print-page md-section' id='section-2-1' heading-number='2.1'>
+                        <h1>VCF System Specifications<a class='headerlink' href='#section-2-1' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="vcf-system-specifications-changelog" heading-number="2.1.1"><h1 id="vcf-system-specifications-changelog-changelog">Changelog</h1>
+<h1 id="vcf-system-specifications-changelog-welcome-to-vcf-co-engineered-systems-documentation">Welcome to VCF Co-Engineered Systems documentation</h1>
+<p>Change logs go here</p></section><section class="print-page" id="vcf-system-specifications-architecture" heading-number="2.1.2"><h1 id="vcf-system-specifications-architecture-architecture">Architecture</h1>
+<p>Link to Miro - https://miro.com/app/board/uXjVI0QEHGc=/
+<img alt="Architecture Diagram" src="../vcf-system-specifications/architecture.png" /></p></section><section class="print-page" id="vcf-system-specifications-racklayout" heading-number="2.1.3"><p><img alt="rack_layout_diagram" src="../vcf-system-specifications/rack_layout.png" /></p></section></section></section></div><style>.print-site-enumerate-headings #index > h1:before { content: '1 ' }
 
-  <h1>Index</h1>
+                .print-site-enumerate-headings #index h2:before { content: '1.' counter(counter-index-2) ' ' }
+                .print-site-enumerate-headings #index h2 {  counter-reset: counter-index-3 ;  counter-increment: counter-index-2 }
+            
+                .print-site-enumerate-headings #index h3:before { content: '1.' counter(counter-index-2) '.' counter(counter-index-3) ' ' }
+                .print-site-enumerate-headings #index h3 {  counter-increment: counter-index-3 }
+            
+.print-site-enumerate-headings #section-2 > h1:before { content: '2 ' }
+.print-site-enumerate-headings #section-2-1 > h1:before { content: '2.1 ' }
+.print-site-enumerate-headings #vcf-system-specifications-changelog > h1:before { content: '2.1.1 ' }
 
-<p>VCF Co-Engineered Solution Documentation</p>
+.print-site-enumerate-headings #vcf-system-specifications-architecture > h1:before { content: '2.1.2 ' }
+
+.print-site-enumerate-headings #vcf-system-specifications-racklayout > h1:before { content: '2.1.3 ' }
+</style>
 
 
 
@@ -480,7 +521,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.expand", "navigation.sections", "navigation.footer", "toc.integrate", "content.code.copy", "search.suggest", "content.action.print"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "/", "features": ["navigation.expand", "navigation.sections", "navigation.footer", "toc.integrate", "content.code.copy", "search.suggest", "content.action.print"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   
