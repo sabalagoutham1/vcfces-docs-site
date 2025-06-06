@@ -1,0 +1,16 @@
+site_name: VCF Solution Documentation
+site_url: https://your-username.github.io/vcfces-docs-site/
+repo_url: https://github.com/sabalagoutham1/vcfces-docs-site
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+    - search.suggest
+
+nav:
+  - Changelog: Changelog.md
+  - Home: Home.md
+  
